@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<? include "../head_common.html"; ?>
+</head>
+<body>
+<!-- 본문바로가기 -->
+<div id="skipNavi"><a href="container">본문바로가기</a></div>
+<!-- //본문바로가기 -->
+<hr />
+<div id="wrap">
+<!-- header -->
+<? include "../header.html"; ?>
+<!-- header -->
+<!-- container -->
+<div id="container">
+	<section class="sub_visual">
+		<div class="sub_visual_inn">
+			<p class="tit">회원가입</p>
+			<div class="loc cf">
+				<ul>
+					<li class="home"><a href="/" title="메인으로 가기"><i class="xi-home"></i></a></li>
+					<li class="gt"><i class="xi-angle-right-thin"></i></li>
+					<li class="link"><a href="/member/join_step_one.html">회원가입</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="tit">
+		<h3 class="sub_tit">
+			<span class="tit_inn">
+				<span class="tit">
+					<span>Member Info</span>
+					<span>정보입력</span>
+				</span>
+			</span>
+		</h3>
+	</section>
+	<section class="join_step_two">
+		<div class="join_step_two_inn">
+			<div class="board_inp">
+				<table>
+					<tbody>
+						<tr>
+							<th>이름</th>
+							<td><input type="text" class="w_70" /></td>
+						</tr>
+						<tr>
+							<th>아이디</th>
+							<td><input type="text" class="w_70" placeholder="이메일 주소를 적어주세요." pattern="\w+@\w+\.\w+"/><button type="button">중복검사</button></td>
+						</tr>
+						<tr>
+							<th>인증코드</th>
+							<td>
+								<input type="text" class="w_30" /><button type="button">인증코드발송</button><button type="button">인증확인</button>
+							</td>
+						</tr>
+						<tr>
+							<th>비밀번호</th>
+							<td><input type="password"  class="w_70"/></td>
+						</tr>
+						<tr>
+							<th>비밀번호 확인</th>
+							<td><input type="password" class="w_70" /></td>
+						</tr>
+						<tr>
+							<th>연락처</th>
+							<td><input type="text" class="w_70" placeholder="'-'없이 입력해주세요." /></td>
+						</tr>
+						<tr>
+							<th>SMS 수신여부</th>
+							<td>
+								<span><input type="radio" name="sms_chk" id="sms_y" checked/><label for="sms_y">수신함</label></span>
+								<span><input type="radio" name="sms_chk" id="sms_n" /><label for="sms_n">수신하지 않음</label></span>
+								<span class="txt">SMS 수신에 동의하셔야 동화마루에서 제공하는 다양한 혜택과 이벤트 소식을 SMS로 받으실 수 있습니다.</span>
+							</td>
+						</tr>
+						<tr>
+							<th>이메일 수신여부</th>
+							<td>
+								<span><input type="radio" name="email_chk" id="email_y" checked/><label for="email_y">수신함</label></span>
+								<span><input type="radio" name="email_chk" id="email_n" /><label for="email_n">수신하지 않음</label></span>
+								<span class="txt">이메일 수신에 동의하셔야 동화마루에서 제공하는 다양한 혜택과 이벤트 소식을 이메일로 받으실 수 있습니다.</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="done">
+				<ul>
+					<li class="poi"><a href="join_step_three.html">회원가입</a></li>
+					<li><a href="/">취소하기</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>
+<!-- //container -->
+<!-- footer -->
+<? include "../footer.html"; ?>
+<!-- //footer -->
+</div>
+</body>
+</html>

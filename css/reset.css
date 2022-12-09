@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url(//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/NotoSansKR-2350.css);
+
+/* reset.css */
+html, body {width:100%;height:100%;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,input,select,option,textarea,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:top; -webkit-text-size-adjust:100%;}
+
+table, caption, tbody, tfoot, thead, tr, th, td, img, input, button, select, label, fieldset {vertical-align:middle;}
+table {width:100%; border-collapse:collapse; border-spacing:0;}
+button {cursor:pointer;}
+img, fieldset {border:0;}
+ul, ol, li {list-style:none;}
+address, caption, cite, code, em, strong, th {font-style:normal;font-weight:normal;}
+header, hgroup, footer, section, article, nav, canvas, figure, figcaption {display:block;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+blockquote, q {quotes:none;}
+q:after, q:before {content:"";}
+.cf:after {content:""; display:block; clear:both;}
+caption, th {text-align:left;}
+abbr, acronym {border:none;}
+hr {display:none;}
+#skipNavi, .blind {position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden;visibility:hidden;}
+
+/* common */
+body {width:100%; *min-width:1000px; background:#fff; *word-break:break-all;-ms-word-break:break-all; overflow-x: hidden; }
+body {font-family:'Nanum Gothic', '나눔 고딕', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', Arial, Helvetica, Sans-serif; font-size:13px; color:#333; *letter-spacing:-1px;}
+a {font-family:'Nanum Gothic', '나눔 고딕', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', Arial, Helvetica, Sans-serif; font-size:13px; color:#333; text-decoration:none; outline:0;}
+input,select,option,label,button,textarea {font-family:'Nanum Gothic', '나눔 고딕', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', Arial, Helvetica, Sans-serif; font-size:13px; color:#333;}
+input,select,option,button,textarea {border:1px solid #ccc; border-radius:0; box-sizing:border-box;}
+
+/* native hide */
+.hide {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
+.hide::-ms-expand {display:none;}
+select {padding:0 23px 0 8px; background:#fff url(/images/select_arr.png) no-repeat 100% 0; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+select::-ms-expand {display:none;}
+input {padding:0 8px;}
+textarea {padding:5px 8px; line-height:18px;}
+button {border-radius:3px;}
+
+/* input_file */
+.input_file {position:relative; width:100%;}
+.input_file .hidden {z-index:1; position:relative; overflow:hidden; width:100%; height:28px;}
+.input_file .hidden .bgimg {position:absolute; left:0; top:0; width:50px; height:100%;  
+							background:#dae1ea url(/images/input_file.png) no-repeat 0 0; background-size:cover;}
+.input_file .hidden input {opacity:0; width:100%;}
+.input_file .show {position:absolute; left:0; top:0; width:100%; height:26px; padding-left:50px; box-sizing:border-box;}
+.input_file .show input {width:100%; height:100%; border:1px solid #aaa; color:#777; box-sizing:border-box;}

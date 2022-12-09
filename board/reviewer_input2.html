@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<? include "../head_common.html"; ?>
+</head>
+<body>
+<!-- 본문바로가기 -->
+<div id="skipNavi"><a href="container">본문바로가기</a></div>
+<!-- //본문바로가기 -->
+<hr />
+<div id="wrap">
+<!-- header -->
+<? include "../header.html"; ?>
+<!-- header -->
+<!-- container -->
+<div id="container">
+	<section class="sub_visual">
+		<div class="sub_visual_inn">
+			<p class="tit">겜맥 리뷰</p>
+			<div class="loc cf">
+				<ul>
+					<li class="home"><a href="/" title="메인으로 가기"><i class="xi-home"></i></a></li>
+					<li class="gt"><i class="xi-angle-right-thin"></i></li>
+					<li class="link"><a href="/board/reviewer.html">리뷰어</a></li>
+					<li class="gt"><i class="xi-angle-right-thin"></i></li>
+					<li class="link"><a href="/board/reviewer_list.html">겜맥리뷰</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- 리뷰어 메뉴 -->
+	<div class="company_menu reviewer_menu">
+		<ul>
+			<li><a href="/board/reviewer.html">겜맥 리뷰어란</a></li>
+			<li><a href="/board/reviewer_write.html">겜맥 리뷰어신청</a></li>
+			<li class="on"><a href="/board/reviewer_list.html">겜맥 리뷰</a></li>
+		</ul>
+	</div>
+	<section class="reviewer company">
+		<div class="board_inp">
+			<table>
+				<tbody>
+					<tr>
+						<th>제목</th>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>내용</th>
+						<td>
+							<textarea></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>사진첨부</th>
+						<td>
+							<div class="input_file">
+								<p class="hidden">
+									<span class="bgimg"></span><input type="file" name="file" id="file" onchange="document.getElementById('txt').value=this.value;" />
+								</p>
+								<p class="show">
+									<input type="text" name="" id="txt" placeholder="파일을 선택해주세요." readonly="readonly" />
+								</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>동영상 URL</th>
+						<td>
+							<input type="url" placeholder="http:// 또는 https://" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="done">
+				<ul>
+					<li class="poi"><a href="reviewer_list.html">등록하기</a></li>
+					<li><a href="reviewer_list.html">취소하기</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>
+<!-- //container -->
+<!-- footer -->
+<? include "../footer.html"; ?>
+<!-- //footer -->
+</div>
+</body>
+</html>
